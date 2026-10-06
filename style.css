@@ -177,17 +177,18 @@ h1, h2, h3, h4, p, ul, figure, blockquote {
     margin-top: 2rem;
 }
 
+.hero-photo {
+    order: -1;
+}
+
 .hero-photo img {
-    width: 100%;
-    max-width: 320px;
-    height: auto;
-    aspect-ratio: 4 / 5;
+    width: 9rem;
+    height: 9rem;
     object-fit: cover;
-    border-radius: 1.25rem;
-    border: 1px solid var(--border);
-    background-color: var(--surface);
-    padding: 0.5rem;
-    margin: 0 auto;
+    object-position: 50% 18%;
+    border-radius: 50%;
+    border: 4px solid var(--surface);
+    box-shadow: 0 0 0 1.5px var(--border);
 }
 
 /* ===== Botões ===== */
@@ -316,44 +317,78 @@ h1, h2, h3, h4, p, ul, figure, blockquote {
 }
 
 /* ===== Habilidades ===== */
-.skills-grid {
-    list-style: none;
-    padding: 0;
+.skills-groups {
     display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 1rem;
+    gap: 1.25rem;
 }
 
-.skill-card {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 0.875rem;
-    padding: 1.25rem;
+.skill-group {
     background-color: var(--surface);
     border: 1px solid var(--border);
-    border-radius: 0.875rem;
-    transition: border-color 0.2s ease, transform 0.2s ease;
+    border-radius: 1rem;
+    padding: 1.5rem;
 }
 
-.skill-card:hover {
-    border-color: var(--accent);
-    transform: translateY(-3px);
-}
-
-.skill-tag {
+.skill-group h3 {
     font-family: var(--font-mono);
-    font-size: 0.875rem;
-    color: var(--accent);
+    font-size: 0.8125rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--muted);
+    margin-bottom: 1rem;
+}
+
+.skill-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.625rem;
+}
+
+.skill-list li {
+    display: flex;
+    align-items: center;
+    gap: 0.875rem;
+    padding: 0.5rem;
+    border-radius: 0.75rem;
+    transition: background-color 0.2s ease;
+}
+
+.skill-list li:hover {
+    background-color: var(--bg);
+}
+
+.skill-icon {
+    flex-shrink: 0;
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background-color: var(--bg);
     border: 1px solid var(--border);
-    border-radius: 0.5rem;
-    padding: 0.25rem 0.625rem;
+    border-radius: 0.75rem;
+}
+
+.skill-icon img {
+    width: 1.75rem;
+    height: 1.75rem;
 }
 
 .skill-name {
     font-weight: 600;
+    font-size: 1.0625rem;
     color: var(--ink);
+}
+
+.skill-name small {
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+    font-weight: 400;
+    color: var(--muted);
+    margin-left: 0.25rem;
 }
 
 /* ===== Projetos ===== */
@@ -506,16 +541,25 @@ h1, h2, h3, h4, p, ul, figure, blockquote {
     }
 
     .hero-grid {
-        grid-template-columns: minmax(0, 1fr) 300px;
+        grid-template-columns: minmax(0, 1fr) auto;
         gap: 4rem;
+    }
+
+    .hero-photo {
+        order: 0;
+    }
+
+    .hero-photo img {
+        width: 13rem;
+        height: 13rem;
     }
 
     .curriculo-grid {
         grid-template-columns: repeat(2, minmax(0, 1fr));
     }
 
-    .skills-grid {
-        grid-template-columns: repeat(4, minmax(0, 1fr));
+    .skills-groups {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
     }
 
     .projetos-grid {
@@ -523,8 +567,3 @@ h1, h2, h3, h4, p, ul, figure, blockquote {
     }
 }
 
-@media (min-width: 1024px) {
-    .skills-grid {
-        grid-template-columns: repeat(7, minmax(0, 1fr));
-    }
-}
