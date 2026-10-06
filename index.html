@@ -1,125 +1,183 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gabriel Silva | Desenvolvedor Backend</title>
+    <meta name="description" content="Portfólio de Gabriel Silva, estudante de Análise e Desenvolvimento de Sistemas no CEUB, com foco em desenvolvimento backend e dados.">
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <title>Portifólio Gabriel</title>
 </head>
 <body>
     <header class="header">
-        <nav class="container navbar">
-            <a href="#" class="logo">portfolioHUB</a>
+        <nav class="container navbar" aria-label="Navegação principal">
+            <a href="#perfil" class="logo" aria-label="Gabriel Silva, voltar ao início">
+                <svg class="logo-mark" viewBox="0 0 156 156" aria-hidden="true">
+                    <path d="M78 6 L140 42 V114 L78 150 L16 114 V42 Z" fill="#FFFFFF" stroke="currentColor" stroke-width="8" stroke-linejoin="round"/>
+                    <text x="78" y="98" text-anchor="middle" font-family="Space Grotesk, sans-serif" font-weight="700" font-size="62" letter-spacing="-2"><tspan fill="#1D2430">G</tspan><tspan fill="currentColor">S</tspan></text>
+                </svg>
+                <span class="logo-text">Gabriel Silva</span>
+            </a>
             <div class="nav-links">
-                <a href="#perfil">Perfil</a>
                 <a href="#curriculo">Currículo</a>
                 <a href="#habilidades">Habilidades</a>
                 <a href="#projetos">Projetos</a>
                 <a href="#recomendacoes">Recomendações</a>
             </div>
-            <a href="gabrielso2025@gmail.com" class="contact-btn">Contato</a>
+            <a href="mailto:gabrielso2025@gmail.com" class="contact-btn">Contato</a>
         </nav>
     </header>
 
     <main>
-        <!-- Seção Perfil Pessoal -->
-        <section id="perfil">
-            <div class="container perfil">
-                <img src="WhatsApp Image 2025-09-13 at 16.34.59.jpeg" alt="Foto de Perfil" class="perfil-img">
-                <h1>Gabriel Silva de Oliveira</h1>
-                <p class="subtitle">Estudante de A.D.S. | Desenvolvedor Aspirante</p>
-                <p class="bio">
-                    Olá, meu nome é Gabriel. Sou formado em Educação Física, uma área que sempre me fascinou pela capacidade de superação e bem-estar que o esporte proporciona. Sou uma pessoa muito ativa, pratico diversas modalidades e realmente valorizo a interação e a troca de experiências que o ambiente esportivo oferece.
-
-Recentemente, por influência e incentivo do meu círculo de amigos, decidi explorar um novo universo e comecei a cursar Análise e Desenvolvimento de Sistemas. Percebi que, assim como no esporte, a tecnologia tem um poder incrível de conectar pessoas e criar soluções inovadoras. Agora, meu objetivo é unir essas duas paixões: quero usar a lógica e as ferramentas do desenvolvimento de sistemas para criar projetos que promovam a saúde, a interação e um estilo de vida mais ativo.
-                </p>
-                <div class="perfil-buttons">
-                    <a href="mailto:gabrielso2025@gmail.com" class="btn btn-primary">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                            <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
-                            <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
-                        </svg>
-                        Email
-                    </a>
-                    <a href="https://www.linkedin.com/in/gabriel-silva-398842384/" target="_blank" class="btn btn-secondary">LinkedIn</a>
-                    <a href="https://github.com/Gabrielso2001" target="_blank" class="btn btn-secondary">GitHub</a>
+        <!-- Perfil -->
+        <section id="perfil" class="hero">
+            <div class="container hero-grid">
+                <div class="hero-text">
+                    <p class="prompt">&gt; desenvolvedor backend_</p>
+                    <h1>Gabriel Silva de Oliveira</h1>
+                    <p class="subtitle">Estudante de Análise e Desenvolvimento de Sistemas · Brasília, DF</p>
+                    <p class="bio">
+                        Sou formado em Educação Física e hoje curso Análise e Desenvolvimento de Sistemas no CEUB.
+                        Entrei na área por incentivo de amigos e acabei descobrindo que gosto de entender o que
+                        acontece por trás da tela: como os dados são organizados e como um sistema resolve um problema real.
+                    </p>
+                    <p class="bio">
+                        Meu foco agora é desenvolvimento backend e dados. Do esporte eu trago disciplina,
+                        constância e trabalho em equipe, e quero unir as duas áreas criando soluções que
+                        incentivem um estilo de vida mais ativo.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="mailto:gabrielso2025@gmail.com" class="btn btn-primary">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+                            Enviar e-mail
+                        </a>
+                        <a href="https://www.linkedin.com/in/gabriel-silva-398842384/" target="_blank" rel="noopener" class="btn btn-secondary">LinkedIn</a>
+                        <a href="https://github.com/Gabrielso2001" target="_blank" rel="noopener" class="btn btn-secondary">GitHub</a>
+                    </div>
+                </div>
+                <div class="hero-photo">
+                    <img src="foto-perfil.jpeg" alt="Foto de Gabriel Silva" width="1200" height="1600">
                 </div>
             </div>
         </section>
 
-        <!-- Seção Currículo -->
-        <section id="curriculo">
+        <!-- Currículo -->
+        <section id="curriculo" class="section section-alt">
             <div class="container">
-                <h2 class="section-title">Currículo</h2>
-                <div class="curriculo-card">
-                    <div class="curriculo-grid">
-                        <!-- Formação -->
-                        <div>
-                            <h3>Formação</h3>
-                            <div class="curriculo-item">
-                                <h4>UniCeub</h4>
-                                <p class="location">Graduação em Educação Física</p>
-                                <p class="date">2018 - 2022</p>
-                            </div>
-                                <p class="location">Cursando - A.D.S.</p>
-                                <p class="date">2022 - 2027</p>
-                            </div>
-                        <!-- Experiência -->
-                        
-                     <div class="curriculo-download">
+                <p class="section-kicker">01 · currículo</p>
+                <h2 class="section-title">Formação e experiência</h2>
+                <div class="curriculo-grid">
+                    <div class="curriculo-col">
+                        <h3>Formação</h3>
+                        <div class="curriculo-item">
+                            <h4>Análise e Desenvolvimento de Sistemas</h4>
+                            <p class="org">CEUB · Centro Universitário de Brasília</p>
+                            <p class="date">Cursando · previsão de conclusão em 2027</p>
+                        </div>
+                        <div class="curriculo-item">
+                            <h4>Educação Física (Graduação)</h4>
+                            <p class="org">CEUB · Centro Universitário de Brasília</p>
+                            <p class="date">2018 – 2022</p>
+                        </div>
+                    </div>
+                    <div class="curriculo-col">
+                        <h3>Experiência</h3>
+                        <div class="curriculo-item">
+                            <h4>Suporte técnico e manutenção de sistemas</h4>
+                            <p class="org">TCB · Sociedade de Transportes Coletivos de Brasília</p>
+                            <ul>
+                                <li>Suporte técnico e manutenção dos sistemas internos da empresa.</li>
+                                <li>Desenvolvimento de uma página web interna para gestão de setores, com filtros, edição e exclusão de registros (PHP e HTML).</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Seção Habilidades e Competências -->
-        <section id="habilidades">
+        <!-- Habilidades -->
+        <section id="habilidades" class="section">
             <div class="container">
-                <h2 class="section-title">Habilidades e Competências</h2>
-                <div class="habilidades-grid">
-                    <div class="habilidade-card">
-                        <img src="https://placehold.co/80x80/FFFFFF/000000?text=HTML" alt="Logo HTML"/>
-                        <h4>HTML5</h4>
-                    </div>
-                    <div class="habilidade-card">
-                        <img src="https://placehold.co/80x80/FFFFFF/000000?text=CSS" alt="Logo CSS"/>
-                        <h4>CSS3</h4>
-                    </div>
-                    <div class="habilidade-card">
-                        <img src="https://placehold.co/80x80/FFFFFF/000000?text=JS" alt="Logo JavaScript"/>
-                        <h4>JavaScript</h4>
-                    </div>
-                    <div class="habilidade-card">
-                        <img src="https://placehold.co/80x80/FFFFFF/000000?text=GIT" alt="Logo Git"/>
-                        <h4>Git & GitHub</h4>
-                    </div>
-                    
+                <p class="section-kicker">02 · habilidades</p>
+                <h2 class="section-title">Tecnologias que uso</h2>
+                <ul class="skills-grid">
+                    <li class="skill-card"><span class="skill-tag">py</span><span class="skill-name">Python</span></li>
+                    <li class="skill-card"><span class="skill-tag">java</span><span class="skill-name">Java</span></li>
+                    <li class="skill-card"><span class="skill-tag">sql</span><span class="skill-name">SQL</span></li>
+                    <li class="skill-card"><span class="skill-tag">&lt;/&gt;</span><span class="skill-name">HTML5</span></li>
+                    <li class="skill-card"><span class="skill-tag">{ }</span><span class="skill-name">CSS3</span></li>
+                    <li class="skill-card"><span class="skill-tag">js</span><span class="skill-name">JavaScript</span></li>
+                    <li class="skill-card"><span class="skill-tag">git</span><span class="skill-name">Git &amp; GitHub</span></li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Projetos -->
+        <section id="projetos" class="section section-alt">
+            <div class="container">
+                <p class="section-kicker">03 · projetos</p>
+                <h2 class="section-title">Projetos</h2>
+                <div class="projetos-grid">
+                    <article class="projeto-card">
+                        <p class="projeto-repo">Gabrielso2001/Ifood.Copy.API</p>
+                        <h3>Ifood Copy API</h3>
+                        <p>API inspirada no iFood, criada para praticar desenvolvimento backend.</p>
+                        <a href="https://github.com/Gabrielso2001/Ifood.Copy.API" target="_blank" rel="noopener">Ver no GitHub →</a>
+                    </article>
+                    <article class="projeto-card">
+                        <p class="projeto-repo">Gabrielso2001/tasktracker-projeto</p>
+                        <h3>Task Tracker</h3>
+                        <p>Aplicação para organizar e acompanhar tarefas.</p>
+                        <a href="https://github.com/Gabrielso2001/tasktracker-projeto" target="_blank" rel="noopener">Ver no GitHub →</a>
+                    </article>
+                    <article class="projeto-card">
+                        <p class="projeto-repo">Gabrielso2001/PortifolioHub</p>
+                        <h3>PortfolioHub</h3>
+                        <p>Este portfólio, feito com HTML e CSS puros.</p>
+                        <a href="https://github.com/Gabrielso2001/PortifolioHub" target="_blank" rel="noopener">Ver no GitHub →</a>
+                    </article>
+                </div>
+                <div class="projetos-more">
+                    <a href="https://github.com/Gabrielso2001?tab=repositories" target="_blank" rel="noopener" class="btn btn-secondary">Ver todos os repositórios</a>
                 </div>
             </div>
         </section>
 
-        <!-- Seção Recomendações -->
-        <section id="recomendacoes">
-            <div class="container recomendacoes-container">
+        <!-- Recomendações -->
+        <section id="recomendacoes" class="section">
+            <div class="container">
+                <p class="section-kicker">04 · recomendações</p>
                 <h2 class="section-title">Recomendações e Testemunhos</h2>
-                <div class="recomendacao-card">
-                    <p class="quote">"O Gabriel é uma pessoa incrível de se conviver. Sempre prestativo, educado e disposto a ajudar, consegue transmitir confiança e simpatia em qualquer ambiente. Além de comunicativo, tem uma inteligência que faz diferença nas conversas e nas soluções do dia a dia. Sem dúvida, alguém que agrega muito tanto no pessoal quanto no profissional."</p>
-                    <div class="recomendacao-author">
-                        <p class="name">Natália Nobrega Simões</p>
-                        <p class="title">Graduada em biologia </p>
-                    </div>
-                </div>
-                    </div>
-                </div>
+                <figure class="recomendacao-card">
+                    <span class="quote-mark" aria-hidden="true">“</span>
+                    <blockquote>
+                        O Gabriel é uma pessoa incrível de se conviver. Sempre prestativo, educado e disposto a ajudar,
+                        consegue transmitir confiança e simpatia em qualquer ambiente. Além de comunicativo, tem uma
+                        inteligência que faz diferença nas conversas e nas soluções do dia a dia. Sem dúvida, alguém que
+                        agrega muito tanto no pessoal quanto no profissional.
+                    </blockquote>
+                    <figcaption>
+                        <span class="name">Natália Nobrega Simões</span>
+                        <span class="role">Graduada em Biologia</span>
+                    </figcaption>
+                </figure>
             </div>
         </section>
     </main>
 
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <p>&copy; 2025 Gabriel Silva de Oliveira. Todos os direitos reservados.</p>
-            <p class="footer-note">Desenvolvido como parte do Bootcamp I - CEUB.</p>
+    <footer class="footer">
+        <div class="container footer-inner">
+            <div>
+                <p class="footer-title">Vamos conversar?</p>
+                <a href="mailto:gabrielso2025@gmail.com" class="footer-mail">gabrielso2025@gmail.com</a>
+            </div>
+            <div class="footer-meta">
+                <p>&copy; 2026 Gabriel Silva de Oliveira</p>
+                <p>Desenvolvido como parte do Bootcamp I · CEUB</p>
+            </div>
         </div>
     </footer>
 </body>
