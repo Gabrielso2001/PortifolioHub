@@ -567,3 +567,27 @@ h1, h2, h3, h4, p, ul, figure, blockquote {
     }
 }
 
+
+/* Telas grandes de computador */
+@media (min-width: 1280px) {
+    .container {
+        max-width: 1200px;
+    }
+
+    .hero {
+        padding: 6.5rem 0 7rem;
+    }
+
+    .hero-grid {
+        gap: 6rem;
+    }
+
+    .hero-photo img {
+        width: 16rem;
+        height: 16rem;
+    }
+
+    .bio {
+        font-size: 1.125rem;
+    }
+}
